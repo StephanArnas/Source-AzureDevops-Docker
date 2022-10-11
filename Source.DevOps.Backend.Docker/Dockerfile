@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Azure.DevOps.Backend.csproj", "."]
-RUN dotnet restore "./Azure.DevOps.Backend.csproj"
+COPY ["Source.DevOps.Backend.Docker.csproj", "."]
+RUN dotnet restore "./Source.DevOps.Backend.Docker.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "Azure.DevOps.Backend.csproj" -c Release -o /app/build
+RUN dotnet build "Source.DevOps.Backend.Docker.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Azure.DevOps.Backend.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Source.DevOps.Backend.Docker.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Azure.DevOps.Backend.dll"]
+ENTRYPOINT ["dotnet", "Source.DevOps.Backend.Docker.dll"]

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.DevOps.Backend", "Azure.DevOps.Backend.csproj", "{1889BF8D-64CC-41DB-977A-79465FD7B55D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Source.DevOps.Backend.Docker", "Source.DevOps.Backend.Docker.csproj", "{93524DE8-0C70-4479-9864-644D9C623BBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1889BF8D-64CC-41DB-977A-79465FD7B55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1889BF8D-64CC-41DB-977A-79465FD7B55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1889BF8D-64CC-41DB-977A-79465FD7B55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1889BF8D-64CC-41DB-977A-79465FD7B55D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93524DE8-0C70-4479-9864-644D9C623BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93524DE8-0C70-4479-9864-644D9C623BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93524DE8-0C70-4479-9864-644D9C623BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93524DE8-0C70-4479-9864-644D9C623BBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8024CA7-D5E1-48F1-A6D3-ACCC60EB1A6C}
+		SolutionGuid = {836D99E2-537F-4962-932B-54118FA60453}
 	EndGlobalSection
 EndGlobal
